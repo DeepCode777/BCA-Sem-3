@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int data;
-    cout << "\n Enter Yout Data :  " << endl;
+    cout << "\n Enter Yout Data : " << endl;
     cin >> data; // (>>) Input Opertor
     cout << data; // (<<) Output Operator
     return 0;
