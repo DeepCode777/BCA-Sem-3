@@ -1,0 +1,23 @@
+// #9 Example - (Dynamic Pol_1)Method OverRidding 1)
+#include <iostream>
+using namespace std;
+
+class base{
+    public :
+    void print(){
+        cout << " \n Base Class " << endl;
+    }
+};
+
+class derived : public base{
+    public :
+    void print(){
+        cout << "Derived Class " << endl ;
+    }
+};
+
+int main() {
+    derived d;
+    d.print(); // Output - Derived Class
+    return 0;
+}
