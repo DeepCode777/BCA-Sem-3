@@ -1,4 +1,4 @@
-// #17-18 Example Friend Function
+// #17-18 Example (Friend Function) Combined By Deep
 
 #include <iostream>
 using namespace std;
