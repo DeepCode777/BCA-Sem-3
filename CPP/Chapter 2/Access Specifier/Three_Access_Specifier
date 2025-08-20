@@ -1,0 +1,34 @@
+// #3 Exampl - Acesses Specifire
+
+#include <iostream>
+using namespace std;
+
+class base{
+    private :
+        int pri; // Private Variable
+    protected :
+        int pro; // Protected Variable
+    public :
+        int pub; // Public Variable
+        
+    base(){
+        pri = 3;
+        pro = 4;
+        pub = 5;
+    }
+};
+
+class derive : public base{ // For Protected Variable
+    public :
+    void show(){
+        cout << "Private Variable is Not Accessible " ;
+        cout << "\nValue Of Protected Variable Is = " << pro; 
+        cout << "\nValue Of Public Variable Is = " << pub; 
+    }
+};
+
+int main() {
+    derive c;
+    c.show();
+    return 0;
+}
