@@ -12,3 +12,4 @@ ELSE
 END IF 
   DBMS_OUTPUT.PUT_LINE('Bigger Number Is : ' ||c);
 END;
+/
