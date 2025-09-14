@@ -19,4 +19,3 @@ BEGIN
       END LOOP;      
   CLOSE ad; 
 END;
-/
