@@ -9,7 +9,7 @@ class bca{
     char grade;
     
     public :
-    bca(int rno, int ag, int gd){
+    bca(int rno, int ag, char gd){
         rollno = rno;
         age = ag;
         grade = gd;
