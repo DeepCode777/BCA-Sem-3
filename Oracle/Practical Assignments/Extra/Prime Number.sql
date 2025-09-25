@@ -6,11 +6,11 @@ BEGIN
     n := &n;
   FOR i IN 1..n
   LOOP
-    IF ((MOD(N,i)) = 0) THEN
+    IF ((MOD(n,i)) = 0) THEN
       c := c + 1;
     END IF;
   END LOOP;
-  IF (C = 2) THEN
+  IF (c = 2) THEN
     DBMS_OUTPUT.PUT_LINE('Number Is Prime');
   ELSE
     DBMS_OUTPUT.PUT_LINE('Number Not Is Prime');
