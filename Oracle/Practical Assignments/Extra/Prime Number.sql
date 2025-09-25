@@ -1,7 +1,7 @@
 DECLARE
     n NUMBER (5);
-    i NUMBER (5);
-    c Number (5);
+    i NUMBER (5) := 1;
+    c Number (5) := 0;
 BEGIN
     n := &n;
   FOR i IN 1..n
