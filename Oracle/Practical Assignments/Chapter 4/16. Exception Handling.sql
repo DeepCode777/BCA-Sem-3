@@ -4,9 +4,9 @@ CREATE TABLE bca (
   smark NUMBER(3)
 );
 
-INSERT INTO bca VALUES (1, 'GAURAV', 98);
-INSERT INTO bca VALUES (2, 'ASHISH', 98);
-INSERT INTO bca VALUES (3, 'PRAKASH', 98);
+INSERT INTO bca VALUES (1, 'Student 1', 97);
+INSERT INTO bca VALUES (2, 'Student 2', 98);
+INSERT INTO bca VALUES (3, 'Student 3', 99);
 
 DECLARE
     std bca.sname%TYPE;
