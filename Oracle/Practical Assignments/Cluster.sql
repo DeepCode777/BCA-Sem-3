@@ -2,9 +2,16 @@ CREATE CLUSTER c1(dno NUMBER (5));
 
 CREATE INDEX c2 ON CLUSTER c1;
 
-CREATE TABLE dept(dno NUMBER (5), dname VARCHAR2 (30)) CLUSTER c1(dno);
+CREATE TABLE dept(
+  dno NUMBER (5),
+  dname VARCHAR2 (30)
+) CLUSTER c1(dno);
 
-CREATE TABLE emp(eno NUMBER (5), ename VARCHAR2 (30), dno NUMBER (5)) CLUSTER c1(dno);
+CREATE TABLE emp(
+  eno NUMBER (5),
+  ename VARCHAR2 (30),
+  dno NUMBER (5)
+) CLUSTER c1(dno);
 
 INSERT INTO dept(1,'Sales');
 INSERT INTO dept(2,'Management');
