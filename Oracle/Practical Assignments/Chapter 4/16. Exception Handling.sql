@@ -1,0 +1,20 @@
+CREATE TABLE bca (
+  sid NUMBER (5) PRIMARY KEY,
+  sname VARCHAR2 (30),
+  smark NUMBER(3)
+);
+
+INSERT INTO bca VALUES (1, 'GAURAV', 98);
+INSERT INTO bca VALUES (2, 'ASHISH', 98);
+INSERT INTO bca VALUES (3, 'PRAKASH', 98);
+
+DECLARE
+    std bca.sname%TYPE;
+BEGIN
+    SELECT sname INTO std FROM bca WHERE sname = 'DEEP';
+    DBMS_OUTPUT.PUT_LINE('Student Found : ' || std);
+EXCEPTION 
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('DATA NOT FOUND');
+END;
+/
