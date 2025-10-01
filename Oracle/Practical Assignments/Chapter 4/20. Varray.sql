@@ -1,0 +1,11 @@
+CREATE TYPE phone AS VARRAY(5) OF NUMBER(10);
+
+CREATE TABLE phonev (
+  id NUMBER (5) PRIMARY KEY,
+  name VARCHAR2 (30),
+  numbers phone
+);
+
+INSERT INTO phonev VALUES (1,'Emp-1',phone(1111111111,2222222222,3333333333));
+
+SELECT * FROM phonev;
