@@ -1,4 +1,8 @@
-CREATE TABLE emp (eid NUMBER (5) PRIMARY KEY, ename VARCHAR2 (30), salary NUMBER (5));
+CREATE TABLE emp (
+  eid NUMBER (5) PRIMARY KEY,
+  ename VARCHAR2 (30),
+  salary NUMBER (5)
+);
 
 INSERT INTO emp VALUES (1,'Employee 1',10000);
 INSERT INTO emp VALUES (2,'Employee 2',20000);
