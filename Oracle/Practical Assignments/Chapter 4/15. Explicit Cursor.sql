@@ -1,4 +1,8 @@
-CREATE TABLE emp1 (eid NUMBER (5) PRIMARY KEY, ename VARCHAR2 (30), esalary NUMBER (5));
+CREATE TABLE emp1 (
+  eid NUMBER (5) PRIMARY KEY,
+  ename VARCHAR2 (30),
+  esalary NUMBER (5)
+);
 
 INSERT INTO emp1 VALUES (1, 'E1', 10000);
 INSERT INTO emp1 VALUES (2, 'E2', 20000);
