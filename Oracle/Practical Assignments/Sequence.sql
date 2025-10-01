@@ -1,4 +1,8 @@
-CREATE TABLE students(Sno NUMBER (5), Sname VARCHAR2 (30), Scity VARCHAR2 (20));
+CREATE TABLE students(
+  Sno NUMBER (5),
+  Sname VARCHAR2 (30),
+  Scity VARCHAR2 (20)
+);
 
 CREATE SEQUENCE d
   START with 1
