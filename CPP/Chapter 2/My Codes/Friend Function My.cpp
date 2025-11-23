@@ -18,7 +18,7 @@ void ad(abc l){
 }
 
 int main() {
-    abc d;
-    ad(d);
+    abc l;
+    ad(l);
     return 0;
 }
