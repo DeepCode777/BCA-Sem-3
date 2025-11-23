@@ -12,7 +12,7 @@ public:
         for (int i = 0; i < 5; i++)
             cin >> marks[i];
 
-        cout << "\nMarks are: ";
+        cout << "Marks are: " << endl;
         for (int i = 0; i < 5; i++)
             cout << marks[i] << " " << endl;
     }
