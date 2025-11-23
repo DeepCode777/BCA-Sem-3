@@ -3,7 +3,7 @@ using namespace std;
 
 class Student
 {
-    int marks[5]; // array inside class
+    int marks[5];   // array inside class
 
 public:
     void getMarks()
@@ -15,17 +15,28 @@ public:
 
     void showMarks()
     {
-        cout << "Marks are: ";
+        cout << "\nMarks are: ";
         for (int i = 0; i < 5; i++)
             cout << marks[i] << " ";
+    }
+
+    void totalMarks()
+    {
+        int total = 0;
+        for (int i = 0; i < 5; i++)
+            total += marks[i];
+
+        cout << "\nTotal Marks = " << total;
     }
 };
 
 int main()
 {
-    Student s;  // object
+    Student s;
+
     s.getMarks();
     s.showMarks();
+    s.totalMarks();
 
     return 0;
 }
