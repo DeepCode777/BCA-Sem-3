@@ -8,16 +8,13 @@ class Student
 public:
     void getMarks()
     {
-        cout << "Enter 5 marks:\n";
+        cout << "Enter 5 marks:" << endl;
         for (int i = 0; i < 5; i++)
             cin >> marks[i];
-    }
 
-    void showMarks()
-    {
         cout << "\nMarks are: ";
         for (int i = 0; i < 5; i++)
-            cout << marks[i] << " ";
+            cout << marks[i] << " " << endl;
     }
 
     void totalMarks()
@@ -26,7 +23,7 @@ public:
         for (int i = 0; i < 5; i++)
             total += marks[i];
 
-        cout << "\nTotal Marks = " << total;
+        cout << endl << "Total Marks = " << total << endl;
     }
 };
 
@@ -35,7 +32,6 @@ int main()
     Student s;
 
     s.getMarks();
-    s.showMarks();
     s.totalMarks();
 
     return 0;
